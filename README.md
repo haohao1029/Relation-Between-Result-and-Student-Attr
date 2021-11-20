@@ -3,15 +3,11 @@
 R STUDIO ASSIGNMENT
 
 ## FILE STRUCTURE
-.
+.<br />
 ├── img                     # Images files result generated from `main.r` <br />
-
 ├── attr.txt                # .txt file that store .csv columns attribute and meaning <br />
-
 ├── main.r                  # the only R file <br />
-
 ├── student.csv             # Example dataset <br />
-
 └── README.md
 
 
