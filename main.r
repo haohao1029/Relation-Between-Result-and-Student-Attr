@@ -88,7 +88,7 @@ parentEdu <- function(){
   
   graph = marrangeGrob(list(edu_parent), nrow = 1,ncol = 1,top = "Parents' Education Level") # marrageGrob Arrange Graph in Grid Views
 
-# ggsave(filename = paste(file_url, "/q3 - Parents Edu Level.png",sep=""),graph,dpi = 1000,width = 10,height = 5)
+ggsave(filename = paste("img/q3 - Parents Edu Level.png",sep=""),graph,dpi = 1000,width = 10,height = 5)
 
 graph
 }
@@ -107,7 +107,7 @@ relR3AndParentAndSchool <- function() {
     xlab("Mother's Edu Level") + geom_count() + stat_smooth(method = "lm") + facet_wrap(~school)
   
   q3_relation_g3_parent_school = marrangeGrob(list(relation_g3_father_school, relation_g3_mother_school), nrow = 1,ncol = 2,top = "Relationship Between G3, Parent Edu Lvl and School")
-  # ggsave(filename = paste(file_url, "/Relation Between G3, school and Parents Edu Level.png",sep=""),q3_relation_g3_parent_school,dpi = 1000,width = 10,height = 5)
+  ggsave(filename = paste("img/Relation Between G3, school and Parents Edu Level.png",sep=""),q3_relation_g3_parent_school,dpi = 1000,width = 10,height = 5)
   q3_relation_g3_parent_school
 }
 relR3AndParentAndSchool()
@@ -126,7 +126,7 @@ relR3AndParentAndSex <- function() {
   
   q3_relation_g3_parent_sex = marrangeGrob(list(relation_g3_father_sex,  relation_g3_mother_sex), nrow = 1,ncol = 2,top = "Relationship Between G3, Sch, Parent Edu Lvl and Sex")
   q3_relation_g3_parent_sex
-  # ggsave(filename = paste(file_url, "/q3 - Relation Between G3, sex and Parents Edu Level.png",sep=""),q3_relation_g3_parent_sex,dpi = 1000,width = 10,height = 5)
+  ggsave(filename = paste("img/q3 - Relation Between G3, sex and Parents Edu Level.png",sep=""),q3_relation_g3_parent_sex,dpi = 1000,width = 10,height = 5)
 }
 relR3AndParentAndSex()
 
@@ -137,7 +137,7 @@ avgGradeAndFailure <- function() {
     ylab("Avg Result") +
     xlab("Failures")
   graph
- # ggsave(filename = paste(file_url, "/Relationship Between AvgGrade, Failure and School.png",sep=""),graph,dpi = 1000,width = 10,height = 5) 
+ ggsave(filename = paste("img/Relationship Between AvgGrade, Failure and School.png",sep=""),graph,dpi = 1000,width = 10,height = 5) 
 }
 avgGradeAndFailure()
 
@@ -159,7 +159,7 @@ relG3AndFamRelAndHealh <- function() {
   
   graph = marrangeGrob(list(rel_g3_health, rel_g3_famrel), nrow = 2,ncol = 1,top = "Relationship Between G3,  Health and Family Relation")
   graph
- # ggsave(filename = paste(file_url, "/Relationship Between G3, Health and Family Relation.png",sep=""),graph,dpi = 1000,width = 10,height = 5)
+ ggsave(filename = paste("img/Relationship Between G3, Health and Family Relation.png",sep=""),graph,dpi = 1000,width = 10,height = 5)
   
 }
 relG3AndFamRelAndHealh()
@@ -178,7 +178,7 @@ relG3AndAlc <- function() {
   
   q6 = marrangeGrob(list(rel_g3_dalc, rel_g3_walc), nrow = 2,ncol = 1,top = "Relationship Between G3 and Alcohol")
   
-  # ggsave(filename = paste(file_url, "/Relation Between G3 and Alcohol.png",sep=""),q6,dpi = 1000,width = 10,height = 5)
+  ggsave(filename = paste("img/Relation Between G3 and Alcohol.png",sep=""),q6,dpi = 1000,width = 10,height = 5)
   q6
 }
 relG3AndAlc()
@@ -211,7 +211,7 @@ relAvgGradeAndEvents <- function() {
   
   graph = marrangeGrob(list(rel_g3_goout, rel_g3_freetime, rel_g3_studytime, rel_g3_traveltime), nrow = 2,ncol = 2,top = "Relationship Between AvgGrade and Time Spend Events")
   graph
-  # ggsave(filename = paste(file_url, "/Relationship Between AvgGrade and Time Spend Events.png",sep=""),graph,dpi = 1000,width = 10,height = 5)
+  ggsave(filename = paste("img/Relationship Between AvgGrade and Time Spend Events.png",sep=""),graph,dpi = 1000,width = 10,height = 5)
 }
 relAvgGradeAndEvents()
 
@@ -222,7 +222,7 @@ rel_g3_reason <- function() {
     labs(title="Relation between G3 and Reason") +
     ylab("G3 Result") +
     xlab("Reason to Join School") + facet_wrap(~school)
-  # ggsave(filename = paste(file_url, "/Relationship Between G3 and Reason Join School Relation.png",sep=""),rel_g3_reason,dpi = 1000,width = 10,height = 5)
+  ggsave(filename = paste("img/Relationship Between G3 and Reason Join School Relation.png",sep=""),rel_g3_reason,dpi = 1000,width = 10,height = 5)
   
   rel_g3_reason
 }
@@ -234,7 +234,7 @@ romanticEffectStudentGrade <- function() {
     labs(title="Relation between Romantic and Student Grade") +
     ylab("Student Grade (G1, G2, G3)") +
     xlab("Romantic") + facet_wrap(~sex)
-  # ggsave(filename = paste(file_url, "/Relationship Between Romantic, AvgGrade and Sex.png",sep=""),graph,dpi = 1000,width = 10,height = 5) 
+  ggsave(filename = paste("img/Relationship Between Romantic, AvgGrade and Sex.png",sep=""),graph,dpi = 1000,width = 10,height = 5) 
   graph
   }
 romanticEffectStudentGrade()
@@ -253,7 +253,7 @@ relAbsAndTravel <- function () {
       xlab("Travel Time") + facet_wrap(~school)
     graph = marrangeGrob(list(rel_travel_time_n_absences, rel_travel_time_n_g3), nrow = 2,ncol = 1,top = "Relationship Between Travel Time ,G3, and Absence")
     graph
-    # ggsave(filename = paste(file_url, "/Relationship Between Travel Time ,G3, and Absence.png",sep=""),graph,dpi = 1000,width = 10,height = 5) 
+    ggsave(filename = paste("img/Relationship Between Travel Time ,G3, and Absence.png",sep=""),graph,dpi = 1000,width = 10,height = 5) 
     
 }
 relAbsAndTravel()
@@ -266,7 +266,7 @@ relAgeAndResult <- function() {
       ylab("Average Grade") +
       xlab("Age")
    graph
-   # ggsave(filename = paste(file_url, "/Relationship Between Age And Average Grade.png",sep=""),graph,dpi = 1000,width = 10,height = 5) 
+   ggsave(filename = paste("img/Relationship Between Age And Average Grade.png",sep=""),graph,dpi = 1000,width = 10,height = 5) 
    
 }
 relAgeAndResult()
@@ -278,7 +278,7 @@ relPstatusAndFamrel <- function() {
     ylab("Family Relation") +
     xlab("Is Living With Family")
   graph
-  # ggsave(filename = paste(file_url, "/Relationship Between Psatus And Family Relation.png",sep=""),graph,dpi = 1000,width = 10,height = 5) 
+  ggsave(filename = paste("img/Relationship Between Psatus And Family Relation.png",sep=""),graph,dpi = 1000,width = 10,height = 5) 
   
 }
 relPstatusAndFamrel()
