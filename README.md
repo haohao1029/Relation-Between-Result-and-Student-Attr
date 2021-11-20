@@ -4,10 +4,10 @@ R STUDIO ASSIGNMENT
 
 ## FILE STRUCTURE
 .
-├── img                     # Images files result generated from `main.r`
-├── attr.txt                # .txt file that store .csv columns attribute and meaning
-├── main.r                  # the only R file
-├── student.csv             # Example dataset
+├── img                     # Images files result generated from `main.r` __
+├── attr.txt                # .txt file that store .csv columns attribute and meaning __
+├── main.r                  # the only R file __
+├── student.csv             # Example dataset __
 └── README.md
 
 
