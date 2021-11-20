@@ -13,3 +13,7 @@ R STUDIO ASSIGNMENT
 
 ## Documentation
 https://cloudmails-my.sharepoint.com/:w:/g/personal/tp051098_mail_apu_edu_my/ERUWFDZC4itHlQdkRUmsFFwBfTXVxTiYeLxbbbcG9iAweg?e=YgInYE
+
+
+## Result of the Assignment
+![Figure 1-1](img/Relation Between G3 and Alcohol.png")
